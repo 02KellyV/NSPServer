@@ -1,0 +1,63 @@
+
+
+
+
+###
+GET http://localhost:4000/api/sources/details/Neosmartpen_A4_C_Type_grid_en.pdf
+
+###
+GET http://localhost:4000/api/sources/view/Neosmartpen_A4_C_Type_grid_en.pdf?page=1
+
+###
+GET http://localhost:4000/api/sources/view/Neosmartpen_A4_B_Type_string_en.pdf?page=1
+
+
+###
+GET http://localhost:4000/api/sources/convert/Neosmartpen_A4_C_Type_grid_en.pdf?page=1
+
+
+###
+GET http://localhost:4000/api/sources/compile/Neosmartpen_A4_C_Type_grid_en.pdf
+
+###
+GET http://localhost:4000/api/sources/compile/Neosmartpen_A4_B_Type_string_en.pdf
+
+###
+GET http://localhost:4000/api/sources
+
+###
+POST http://localhost:4000/api/files/upload
+Content-Type: application/pdf
+Host: localhost:4000
+
+< /home/juliotorres/Escritorio/ejemplo.pdf
+
+
+###
+POST http://localhost:4000/api/auth/sign-up
+Content-Type: application/json
+
+{
+	"first_name": "julio cesar",
+	"last_name": "torres",
+    "email": "jtorres990@gmail.com",
+	"password": "123456"
+}
+
+###
+POST http://localhost:4000/api/auth/sign-in
+Content-Type: application/json
+
+{
+    "email": "jtorres990@gmail.com",
+	"password": "123456"
+}
+
+###
+GET http://localhost:4000/api/auth/session?token=MTUyNTIxMDkzMQgRmy1IPKG0EVhTSEq5HQa68xR7
+Content-Type: application/json
+
+{
+    "email": "jtorres990@gmail.com",
+	"password": "123456"
+}
