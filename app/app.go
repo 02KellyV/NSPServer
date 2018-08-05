@@ -5,9 +5,9 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/juliotorresmoreno/neosmarthpen/bootstrap"
-	"github.com/juliotorresmoreno/neosmarthpen/config"
-	"github.com/juliotorresmoreno/neosmarthpen/router"
+	"github.com/neosmarthpen/bootstrap"
+	"github.com/neosmarthpen/config"
+	"github.com/neosmarthpen/router"
 )
 
 type App struct {
