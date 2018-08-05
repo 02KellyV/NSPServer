@@ -1,9 +1,9 @@
 package bootstrap
 
 import (
-	"github.com/juliotorresmoreno/neosmarthpen/config"
-	"github.com/juliotorresmoreno/neosmarthpen/db"
-	"github.com/juliotorresmoreno/neosmarthpen/models"
+	"github.com/neosmarthpen/config"
+	"github.com/neosmarthpen/db"
+	"github.com/neosmarthpen/models"
 )
 
 func Sync(config config.Config) error {
